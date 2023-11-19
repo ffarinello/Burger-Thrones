@@ -1,0 +1,49 @@
+* {
+    color-scheme: dark;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    font-size: 1.2rem;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 250px;
+    width: 300px;
+    background-color: darkblue;
+}
+
+.btn-pedido {
+    width: 130px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50px;
+}
+
+
+titulo-separador {
+    color: black;
+    background-color: orange;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguesas {
+    padding: 30px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    background-color: whitesmoke;
+    color: black;
+}
