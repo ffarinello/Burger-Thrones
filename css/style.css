@@ -15,7 +15,6 @@
 .logo {
     height: 250px;
     width: 300px;
-    background-color: darkblue;
 }
 
 .btn-pedido {
@@ -25,25 +24,38 @@
     border-radius: 50px;
 }
 
+/* no funciona *************/
 
-titulo-separador {
-    color: black;
-    background-color: orange;
-    height: 70px;
+.titulo-separador {
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: orange;
+    color: black;
 }
 
-.hamburguesas {
+main{
     padding: 30px;
+}
+
+.section-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: blue;
+    width: 200px;
+    height: 180px;
 }
 
 footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-
     background-color: whitesmoke;
     color: black;
 }
