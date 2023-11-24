@@ -8,61 +8,51 @@
             "id": "1",
             "nombre": "Lannister",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar"],
-            "precio":[
-                {
-                    "simple": "$2500",
-                    "doble": "$3200",
-                    "triple": "$3900"
-                }
+            "precios": [
+                { "tipo": "simple", "valor": "$2500" },
+                { "tipo": "doble", "valor": "$3200" },
+                { "tipo": "triple", "valor": "$3900" }
             ]
         },
         {
             "id": "2",
             "nombre": "Baratheon",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, lechuga, tomate, cebolla y nuestra increíble salsa Tarly (Thousand Island)"],
-            "precio":[
-                {
-                    "simple": "$2500",
-                    "doble": "$3200",
-                    "triple": "$4000"
-                }
+            "precios": [
+                { "tipo": "simple", "valor": "$2500" },
+                { "tipo": "doble", "valor": "$3200" },
+                { "tipo": "triple", "valor": "$4000" }
             ]
         },
         {
             "id": "3",
             "nombre": "Stark",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, panceta y salsa Barbacoa Jagen H'ghar (exclusiva de la casa)"],
-            "precio":[
-                {
-                    "simple": "$3000",
-                    "doble": "$3300",
-                    "triple": "$4100"
-                }
-        ]
+            "precios": [
+                { "tipo": "simple", "valor": "$3000" },
+                { "tipo": "doble", "valor": "$3300" },
+                { "tipo": "triple", "valor": "$4100" }
+            ]
         },
         {
             "id": "4",
             "nombre": "Robb Stark",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, panceta, cebolla caramelizada y salsa Barbacoa Jagen H'ghar (exclusiva de la casa)"],
             "cebollaCrispy": "false",
-            "precio":[
-                {
-                    "simple": "$3100",
-                    "doble": "$3400",
-                    "triple": "$4250"
-                }
+            "precios": [
+                { "tipo": "simple", "valor": "$3100" },
+                { "tipo": "doble", "valor": "$3400" },
+                { "tipo": "triple", "valor": "$4250" }
             ]
         },
         {
             "id": "5",
             "nombre": "Tywin Lannister",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, salsa Myrcella (cebolla picada, mostaza y ketchup)"],
-            "precio":[
-                {
-                    "simple": "$3000",
-                    "doble": "$3200",
-                    "triple": "$4100"
-                }
+            "precios": [
+                { "tipo": "simple", "valor": "$3000" },
+                { "tipo": "doble", "valor": "$3200" },
+                { "tipo": "triple", "valor": "$4100" }
             ]
         }
     ]
