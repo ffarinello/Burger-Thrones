@@ -8,6 +8,7 @@
             "id": "1",
             "nombre": "Lannister",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar"],
+            "img": "./img/burguer.jpg",
             "precios": [
                 { "tipo": "simple", "valor": "$2500" },
                 { "tipo": "doble", "valor": "$3200" },
@@ -18,6 +19,7 @@
             "id": "2",
             "nombre": "Baratheon",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, lechuga, tomate, cebolla y nuestra increíble salsa Tarly (Thousand Island)"],
+            "img": "./img/burguer.jpg",
             "precios": [
                 { "tipo": "simple", "valor": "$2500" },
                 { "tipo": "doble", "valor": "$3200" },
@@ -28,6 +30,7 @@
             "id": "3",
             "nombre": "Stark",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, panceta y salsa Barbacoa Jagen H'ghar (exclusiva de la casa)"],
+            "img": "./img/burguer.jpg",
             "precios": [
                 { "tipo": "simple", "valor": "$3000" },
                 { "tipo": "doble", "valor": "$3300" },
@@ -39,6 +42,7 @@
             "nombre": "Robb Stark",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, panceta, cebolla caramelizada y salsa Barbacoa Jagen H'ghar (exclusiva de la casa)"],
             "cebollaCrispy": "false",
+            "img": "./img/burguer.jpg",
             "precios": [
                 { "tipo": "simple", "valor": "$3100" },
                 { "tipo": "doble", "valor": "$3400" },
@@ -49,6 +53,7 @@
             "id": "5",
             "nombre": "Tywin Lannister",
             "ingredientes": ["Pan de papa, carne smash, doble cheddar, salsa Myrcella (cebolla picada, mostaza y ketchup)"],
+            "img": "./img/burguer.jpg",
             "precios": [
                 { "tipo": "simple", "valor": "$3000" },
                 { "tipo": "doble", "valor": "$3200" },

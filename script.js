@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         datosBurgers.menu.forEach((burger) => {
             //Crear card de hamburguesas
             const card = document.createElement("article"); // {sectionTitle, ingredients, priceSection, addButton}
-            const data = document.createElement("section")
+            const data = document.createElement("section");
             const sectionTitle = document.createElement("figure"); // {title, img}
             const img = document.createElement("img");
             const title = document.createElement("h2");
@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const addButton = document.createElement("button");
             const priceSection = document.createElement("form");
             title.textContent = `${burger.nombre}`;
-            // img.setAttribute = ("src", `${burger.img}`);
+
+            img.setAttribute("src", `${burger.img}`);
 
             burger.ingredientes.forEach((item) => {
                 const ingredient = document.createElement("li");
@@ -36,31 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
             burger.precios.forEach((precio) => {
                 console.log(precio.tipo);
-                nuevoPrecio = document.createElement("p")
-                nuevoPrecio.innerHTML = 
-                    `   <input type= "radio" name="precio">
-                            ${(precio.tipo).toUpperCase()}: ${precio.valor}
+                nuevoPrecio = document.createElement("p");
+                nuevoPrecio.innerHTML = `   <input type= "radio" name="precio">
+                            ${precio.tipo.toUpperCase()}: ${precio.valor}
                         </input>
                     `;
                 priceSection.textContent = precio.valor;
                 prices.appendChild(nuevoPrecio);
             });
 
-            addButton.innerHTML = "Agregar al pedido";
-            
+            addButton.textContent = "Agregar al pedido";
             
             sectionTitle.appendChild(title);
             sectionTitle.appendChild(img);
             sectionDetalle.appendChild(ingredients);
             sectionDetalle.appendChild(prices);
-            
-            data.classList.add("data")
+
+            data.classList.add("data");
             card.classList.add("card");
-            data.appendChild(sectionTitle) // figure
-            data.appendChild(sectionDetalle) // aside
+            data.appendChild(sectionTitle); // figure
+            data.appendChild(sectionDetalle); // aside
             card.appendChild(data);
             card.appendChild(addButton);
-            
+
             fragment.appendChild(card);
         });
     }
