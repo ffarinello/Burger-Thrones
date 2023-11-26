@@ -25,48 +25,58 @@ document.addEventListener("DOMContentLoaded", () => {
             const prices = document.createElement("p");
             const addButton = document.createElement("button");
             const priceSection = document.createElement("form");
-            title.textContent = `${burger.nombre}`;
 
+            title.textContent = `${burger.nombre}`;
             img.setAttribute("src", `${burger.img}`);
 
-            burger.ingredientes.forEach((item) => {
-                const ingredient = document.createElement("li");
-                ingredient.innerHTML = `<h3>Ingredientes:</h3> ${item}`;
-                ingredients.appendChild(ingredient);
-            });
-
-            burger.precios.forEach((precio) => {
-                console.log(precio.tipo);
-                nuevoPrecio = document.createElement("p");
-                nuevoPrecio.innerHTML = `   <input type= "radio" name="precio">
-                            ${precio.tipo.toUpperCase()}: ${precio.valor}
-                        </input>
-                    `;
-                priceSection.textContent = precio.valor;
-                prices.appendChild(nuevoPrecio);
-            });
-
+            addIngredients(burger, ingredients);
+            addPrices(burger, prices);
             addButton.textContent = "Agregar al pedido";
-            
+
+            // appendChilds
             sectionTitle.appendChild(title);
             sectionTitle.appendChild(img);
             sectionDetalle.appendChild(ingredients);
             sectionDetalle.appendChild(prices);
 
+            // appendChild to data
             data.classList.add("data");
             card.classList.add("card");
             data.appendChild(sectionTitle); // figure
             data.appendChild(sectionDetalle); // aside
+
+            //appendChild to card
             card.appendChild(data);
             card.appendChild(addButton);
 
+            //appenChild to fragment
             fragment.appendChild(card);
         });
     }
+    //appenChild to sectionCards
     sectionCards.appendChild(fragment);
 });
 
 // mostrar burger por id
 function mostrarDetallesDato(burger) {
     window.location.href = `burger.html?id=${burger.id}`;
+}
+
+function addIngredients(lista, container) {
+    lista.ingredientes.forEach((item) => {
+        const ingredient = document.createElement("li");
+        ingredient.innerHTML = `<h3>Ingredientes:</h3> ${item}`;
+        container.appendChild(ingredient);
+    });
+}
+
+function addPrices(lista, container) {
+    lista.precios.forEach((precio) => {
+        const nuevoPrecio = document.createElement("p");
+        nuevoPrecio.innerHTML = `   <input type= "radio" name="precio">
+                    ${precio.tipo.toUpperCase()}: ${precio.valor}
+                </input>
+            `;
+            container.appendChild(nuevoPrecio);
+    });
 }
