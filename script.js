@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let fragment = document.createDocumentFragment();
 
     if (datosBurgers) {
+        burgers = datosBurgers.menu;
+        console.log(burgers);
+
         datosBurgers.menu.forEach((burger) => {
             //Crear card de hamburguesas
             const card = document.createElement("article"); // {sectionTitle, ingredients, priceSection, addButton}
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const ingredients = document.createElement("ul");
             const prices = document.createElement("p");
             const addButton = document.createElement("button");
-            const priceSection = document.createElement("form");
+            // const priceSection = document.createElement("form");
 
             title.textContent = `${burger.nombre}`;
             img.setAttribute("src", `${burger.img}`);
@@ -77,6 +80,6 @@ function addPrices(lista, container) {
                     ${precio.tipo.toUpperCase()}: ${precio.valor}
                 </input>
             `;
-            container.appendChild(nuevoPrecio);
+        container.appendChild(nuevoPrecio);
     });
 }
