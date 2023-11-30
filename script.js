@@ -13,10 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let fragment = document.createDocumentFragment();
 
     if (datosBurgers) {
-        burgers = datosBurgers.menu;
+        menu = datosBurgers.menu;
+        menuBurgers = menu.menuBurgers;
+        menuPapas = menu.menuPapas;
+        burgers = menuBurgers.casas;
         console.log(burgers);
+        papas = menuPapas.tipos;
 
-        datosBurgers.menu.forEach((burger) => {
+        burgers.forEach((casa) => {
             //Crear card de hamburguesas
             const card = document.createElement("article"); // {sectionTitle, ingredients, priceSection, addButton}
             const data = document.createElement("section");
