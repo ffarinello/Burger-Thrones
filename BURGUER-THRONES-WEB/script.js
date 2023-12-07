@@ -1,6 +1,6 @@
 // importo datos (locales) desde "menu.json" y los guardo en el localStorage.
 
-fetch("./menu.json")
+fetch("./public/menu.json")
     .then((respuesta) => respuesta.json())
     .then((datos) => localStorage.setItem("burgers", JSON.stringify(datos)));
 
@@ -61,19 +61,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // mostrar casa por id
-function mostrarDetallesDato(x) {
+/* function mostrarDetallesDato(x) {
     window.location.href = `casa.html?id=${x.id}`;
-}
+} */
 
-function addIngredients(lista, container) {
+/* function addIngredients(lista, container) {
     lista.ingredientes.forEach((item) => {
         const ingredient = document.createElement("li");
         ingredient.innerHTML = `<h3>Ingredientes:</h3> ${item}`;
         container.appendChild(ingredient);
     });
-}
+} */
 
-function addPrices(lista, container) {
+/* function addPrices(lista, container) {
     lista.precios.forEach((precio) => {
         const nuevoPrecio = document.createElement("p");
         nuevoPrecio.innerHTML = `   <input type= "radio" name="precio">
@@ -82,4 +82,4 @@ function addPrices(lista, container) {
             `;
         container.appendChild(nuevoPrecio);
     });
-}
+} */

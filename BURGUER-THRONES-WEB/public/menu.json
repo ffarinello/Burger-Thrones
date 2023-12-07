@@ -1,6 +1,6 @@
 {
     "nombreLocal": "Burguer Thrones",
-    "img": "./img/logo.png",
+    "img": "./src/assets/logo.png",
     "horarios": "Martes a Domingo: 11:30 hs a 15hs / 19:30hs a 23:30hs",
     "zonaEnvios": "Quilmes y alrededores.",
     "eslogan": "Burguers pensadas especialmente para vos.",
@@ -10,12 +10,12 @@
             "info": "Todas las hamburguesas incluyen papas 'Cersei Golden Chips'",
             "casas": {
                 "Stark": {
-                    "img": "./img/Stark.webp",
+                    "img": "./src/assets/houses/Stark.webp",
                     "burgers": [
                         {
                             "nombre": "Arya Stark",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar", "panceta", "salsa Barbacoa Jagen H'ghar (exclusiva de la casa)"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3600,
                                 "doble": 3800,
@@ -25,7 +25,7 @@
                         {
                             "nombre": "Robb Stark",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar", "panceta", "cebolla caramelizada", "salsa Jagen H'ghar (barbacoa, exclusiva de la casa)"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3700,
                                 "doble": 4000,
@@ -35,7 +35,7 @@
                         {
                             "nombre": "Jon Snow",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar", "panceta", "cebolla crispy", "salsa Mormont (Mostaza dulce, exclusiva de la casa)"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3700,
                                 "doble": 4000,
@@ -45,12 +45,12 @@
                     ]
                 },
                 "Lannister": {
-                    "img": "./img/Lannister.jpg",
+                    "img": "./src/assets/houses/Lannister.jpg",
                     "burgers": [
                         {
                             "nombre": "Jaime Lannister",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3100,
                                 "doble": 3800,
@@ -60,7 +60,7 @@
                         {
                             "nombre": "Tywin Lannister",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar", "salsa Myrcella (cebolla picada, mostaza y ketchup)"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3600,
                                 "doble": 3800,
@@ -70,12 +70,12 @@
                     ]
                 },
                 "Baratheon": {
-                    "img": "./img/Baratheon.webp",
+                    "img": "./src/assets/houses/Baratheon.webp",
                     "burgers": [
                         {
                             "nombre": "Robert Baratheon",
                             "ingredientes": ["Pan de papa", "carne smash", "doble cheddar", "lechuga", "tomate", "cebolla", "salsa Tarly (Thousand Island)"],
-                            "img": "./img/burguer.jpg",
+                            "img": "./src/assets/burgers/burguer.jpg",
                             "precios": {
                                 "simple": 3600,
                                 "doble": 3800,
